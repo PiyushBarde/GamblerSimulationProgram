@@ -41,13 +41,17 @@ public class GamblerSimulation {
 			}
 		}
 		int totalWonInAmonth = (counterWonPerDay*50) - (counterLosePerDay*50);
+		System.out.println("Total days gambler won = " + counterWonPerDay);
+		System.out.println("Total days gambler lose = " + counterLosePerDay);
 		if(totalWonInAmonth<0)
 		{
 			System.out.println("Total amount lost in 20 days that is in a month is " + Math.abs(totalWonInAmonth));
+			System.out.println("In 20 days he lost " + Math.abs(totalWonInAmonth) + " $ amount");
 		}
 		else if(totalWonInAmonth>0)
 		{
 			System.out.println("Total amount won in 20 days that is in a month is " + totalWonInAmonth);
+			System.out.println("In 20 days he won " + Math.abs(totalWonInAmonth) + " $ amount");
 		}
 		else
 		{
